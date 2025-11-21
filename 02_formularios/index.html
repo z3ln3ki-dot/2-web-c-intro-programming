@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
 <body>
     <h1>div y span</h1>
     <div>
@@ -17,5 +19,60 @@
         <span>texto blue</span>
     </div>
 
+    <br>
+    <hr>
+    <br>
+
+    <div id="contact-form" class="form-container">
+        <h2>contact-form</h2>
+        <form action="">
+            <div>
+                <div>
+                    <label for="fname">first name*</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div>
+                    <label for="lname">last name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+            </div>
+
+            <div>
+                <label for="email">email address</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <p>query type*</p>
+                <div>
+                    <div>
+                        <input type="radio" name="general" id="general" name="query_type" value="general enquiry">
+                        <label for="general">general enquiry</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="query_type" id="supporet" value="support request">
+                        <label for="supporet">support reques</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <p><label for="message">menssage</label></p>
+                    <textarea name="message" id="menssage" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="consent" id="consent" value="true">
+                    <label for="consent">i consent to being contacted by the team</label>
+                </div>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+
 </body>
+
 </html>
